@@ -1,0 +1,46 @@
+{{>webheader}}
+
+    <section class="showcase py-5">
+        <div class="container bg-transparent">
+           
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <div class="reg-form login-form p-4">
+
+                    <h5 class="mb-3">Patient Management System</h5>
+                    <form action="/login" method="POST" autocomplete="off" class="">
+                            <div class="form-group mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="text" class="form-control" name="usremail" placeholder="Email" required
+                                    value="{{user.usremail}}">
+                                <div class="text-danger">
+                                    {{user.emailError}}</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" name="usrpassword" placeholder="password"
+                                    required value="{{user.usrpassword}}">
+                                <div class="text-danger">
+                                    {{user.password}}</div>
+                            </div>
+                            <div class="form-row">
+                                <p style="color:red">{{message}}</p>
+                            </div>
+                        
+
+                       
+                        <div class="form-group float-right mt-4">
+                            <button type="submit" class="btn bg-primary text-white">Submit</button>
+                            <a href="/auth" class="btn" style="background-color: #ddd;">
+                                <button type="button" class="border-0 bg-transparent small"><img src="/static/images/google.webp" width="20"> Login With google</button>
+                            </a>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      {{>webfooter}}

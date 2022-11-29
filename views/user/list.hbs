@@ -1,0 +1,40 @@
+<section class="showcase py-3 patient-list">
+    <div class="container bg-transparent">
+        <div class="pb-2 mt-4 mb-2 ">
+            <h4>Users <a class="btn bg-theme text-white float-end btn-sm" href="/user"><i class="fa fa-plus"></i> Create New</a></h4>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <div class="card">
+                    <table class="table table-borderless mb-0">
+                        <thead>
+                            <tr class="bg-light">
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Address</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each emplist}}
+                            <tr>
+                                <td>{{this.usrname}}</td>
+                                <td>{{this.usremail}}</td>
+                                <td>{{this.usrmobile}}</td>
+                                <td>{{this.usraddress}}</td>
+                                <td>
+                                    <a href="/user/{{this._id}}" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i></a> 
+                                    <a href="/user/delete/{{this._id}}" class="btn btn-sm btn-danger"
+                                        onclick="return confirm('Are you sure to delete this record ?');"><i
+                                            class="fa fa-trash" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

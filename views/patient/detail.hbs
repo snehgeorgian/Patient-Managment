@@ -1,0 +1,37 @@
+<section class="showcase py-4 patient-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12  mx-auto mt-3">
+                    <div class="card">  
+                        <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center flex-wrap">
+                            <div>
+                                <h5 class="mb-0 fw-normal"> {{patient.patname}}</h5>
+                                <small class="text-secondary">{{patient.patgender}}  | {{patient.patage}} Years old</small>
+                            </div>
+                             
+                              <span class="badge bg-theme fw-normal text-white rounded-pill">Appointment Date : {{patient.patappointmentdate}}</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img src="/static/uploads/{{patient.patimage}}" class="img-fluid img-thumbnail d-block me-3" style="width: 100px;height:120px;object-fit:cover;" />
+                                <div>                                                                                                  
+                                    <p class="mb-2 text-secondary small">Reason : {{patient.patreason}}</p>
+                                    <p class="mb-2 text-secondary small">Previos History : {{patient.patprvhistory}}</p>
+                                    <p class="mb-2 text-secondary small">Doctor Name : {{patient.patdoctorname}}</p>
+                                    <p class="mb-2 text-secondary small">Hospital Location : {{patient.pathospitalloc}}</p>
+                                    <p class="mb-2 text-secondary small">Medical Record Number : {{patient.patmrn}}</p>
+                                    <p class="mb-2 text-secondary small">Email id : {{patient.patemail}}</p>
+                                    <p class="mb-2 text-secondary small">Mobile no : {{patient.patmobile}}</p>
+                                    <p class="mb-2 text-secondary small">Address : {{patient.pataddress}}</p>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3" style="text-align:right">
+                        <a class="btn btn-primary btn-sm" style="text-align:center;" href="/patient/list">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

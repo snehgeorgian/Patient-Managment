@@ -1,0 +1,48 @@
+{{>webheader}}
+
+    <section class="showcase py-5 patient-list">
+        <div class="container bg-transparent">
+            <div class="row">
+                
+                <div class="table-responsive">
+                    <div class="card">
+                    <table class="table table-borderless mb-0">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>                       
+                                <th>Reason</th>
+                                <th>Doctor Name</th>
+                                <th>Hospital Location</th>
+                                <th>Medical Record Number</th>
+                                <th>Image</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each patlist}}
+                            <tr>
+                              <td>{{this.patname}}</td>
+                                <td>{{this.patage}}</td>
+                                <td>{{this.patgender}}</td>
+                                <td>{{this.patreason}}</td>
+                                <td>{{this.patdoctorname}}</td>
+                                <td>{{this.pathospitalloc}}</td>
+                                <td>{{this.patmrn}}</td>
+                                <td><img src="/static/uploads/{{this.patimage}}" class="img-fluid img-thumbnail" style="width: 40px;height:40px" /></td>
+                                <td>
+                                    <a href="/patient/details/{{this._id}}" class="btn btn-primary btn-sm"><i class="fa-regular fa-eye"></i></a>
+                                </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                         </div>
+                    </table>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{>webfooter}}

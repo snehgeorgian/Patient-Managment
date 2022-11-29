@@ -1,0 +1,214 @@
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.header-bg-dark{
+    background-color: #3570C1 !important;
+}
+.header-bg-dark .navbar-nav .nav-link{
+  color: #fff;font-size: 14px;
+  -border: 1px solid red;
+  margin: 0 5px;border-radius: 3px;
+  background-color: #2358a3;  
+  color: rgba(255,255,255,.85);
+  padding: 5px 15px;
+}
+.header-bg-dark .navbar-nav .nav-link:hover {
+  background-color: #dae4f2;
+  color: rgba(0,0,0,.85);
+}
+.welcome-block{
+  background-image: url(/static/images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -border: 1px solid red;height: 100vh;
+}
+.showcase .container {
+  min-height: 350px;
+  -background-color: #F9F9F9;
+  -margin-top: 10px;
+  margin-bottom: 10px;
+}
+.reg-form{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+.reg-form .form-label{
+  margin-bottom: 3px;font-size: 13px;color:grey;
+}
+.reg-form .form-control{
+  border: 1px solid #ddd;font-size: 13px;
+}
+.reg-form .form-control:focus{
+  border: 1px solid grey;box-shadow: none;outline: 0;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.padall {
+  padding: 3px;
+}
+footer.footer {  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer-bg-dark, .bg-theme {
+    background-color: #3570C1 !important;
+}
+.list-inline {
+ list-style-type: none;
+}
+
+.list-inline-item a {
+    color:#FFFFFF;
+
+padding-bottom: 1rem;
+}
+.welcome-msg{
+  -border: 1px solid red;
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+}
+.patient-list{
+  -border: 1px solid blue;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+.patient-list tr th{
+  background-color: #eff3f8;
+  border-bottom: 1px solid #ddd !important;
+  border: 0;font-size: 14px;
+  padding: 17px 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.patient-list tr td{
+  font-size: 13px;text-align: center;
+  border-bottom: 1px solid #f0f0f0 !important;
+  border: 0;vertical-align: middle;
+  color: grey;
+}
+.patient-list tr:last-child td{
+  border-bottom: 0 !important;
+}
+.login-form{
+  width: 350px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;top:50%;
+  transform: translate(-50%,-50%);
+}
+.new-reg-form{
+  width: 700px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;top:50%;
+  transform: translate(-50%,-50%);
+}
+#event-calendar table {
+    width: 100%;
+  }
+  
+  #event-calendar table tr th {
+      border: 1px solid #ddd;
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      color: gray;
+      font-size: 14px;
+      font-weight: 400;
+  }
+#event-calendar table tr td {
+    border: 1px solid #ddd;
+    width: 80px;
+    text-align: center;
+}
+#event-calendar .calendar tr td:last-child>a {
+    color: #C4C4C4;
+}
+#event-calendar .calendar td>a {
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 300;
+}
+#event-calendar .calendar td div.highlight {
+    background-color: #EEEEEE;
+    color: red;
+    width: 100%;
+    left: 0;
+    right: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    z-index: 0;
+}
+#event-calendar .calendar td {
+    position: relative;
+}
+#event-calendar table tr td {
+    height: 90px;
+}
+
+
+.slider-new{
+  height: 400px; 
+}
+.slider-new img{
+  height: 400px;
+  object-fit: cover;
+}

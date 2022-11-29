@@ -1,0 +1,55 @@
+<section class="showcase py-3 patient-list">
+    <div class="container  bg-transparent">
+        <div class="pb-2 mt-4 mb-2 ">
+            <h4>Patients <a class="btn bg-theme text-white float-end btn-sm" href="/patient"><i class="fa fa-plus"></i>
+                    Create
+                    New</a></h4>
+        </div>
+
+        <div class="row">
+            <div class="table-responsive">
+                <div class="card">
+                    <table class="table table-borderless mb-0">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Reason</th>
+                                <th>Doctor Name</th>
+                                <th>Hospital Location</th>
+                                <th>Medical Record Number</th>
+                                <th>Image</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each patlist}}
+                            <tr>
+                                <td>{{this.patname}}</td>
+                                <td>{{this.patage}}</td>
+                                <td>{{this.patgender}}</td>
+                                <td>{{this.patreason}}</td>
+                                <td>{{this.patdoctorname}}</td>
+                                <td>{{this.pathospitalloc}}</td>
+                                <td>{{this.patmrn}}</td>
+                                <td><img src="/static/uploads/{{this.patimage}}" class="img-fluid img-thumbnail"
+                                        style="width: 40px;height:40px" /></td>
+                                <td>
+                                    <a href="/patient/{{this._id}}" class="btn btn-sm btn-info"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
+                                    <a href="/patient/detail/{{this._id}}" class="btn btn-primary btn-sm"><i
+                                            class="fa-regular fa-eye"></i></a>
+                                    <a href="/patient/delete/{{this._id}}" class="btn btn-sm btn-danger"
+                                        onclick="return confirm('Are you sure to delete this record ?');"><i
+                                            class="fa fa-trash" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
