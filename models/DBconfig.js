@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://snehpatel:xMXb8vvxVMKIX3AC@comp2068.n8kwegr.mongodb.net/patient_DB', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb+srv://snehpatel:Sneh2275@comp2068.n8kwegr.mongodb.net/patient_DB', { useNewUrlParser: true }, (err) => {
     if (!err) {
         console.log('Connection created.')
     }
