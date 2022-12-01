@@ -4,13 +4,9 @@ const mongoose = require('mongoose');
 const User = mongoose.model('usermaster');
 
 
-if(process.env.NODE_ENV === 'production')
-{
  dotenv.config();
-}
-else{
-  dotenv.config();
-}
+
+
 // google login win passport
 module.exports = function (passport) {
   passport.use(
@@ -18,7 +14,7 @@ module.exports = function (passport) {
       {
         clientID: process.env.GOOGLE_ID,
         clientSecret: process.env.GOOGLE_SECRET,
-        callbackURL: '/auth/google/callback',
+        callbackURL: 'https://sneh-patientmanagement.onrender.com/auth/google/callback',
       },
       async (accessToken, refreshToken, profile, done) => {
        // console.log("profile",profile);
