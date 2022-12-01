@@ -26,10 +26,15 @@ app.use(bodyparser.urlencoded({
 // google login
 require('./config/passport')(passport);
 
-if(process.env.NODE_ENV !== 'production')
+if(process.env.NODE_ENV === 'production')
 {
+ dotenv.config();
+}
+else{
   dotenv.config();
 }
+
+
 //app.use(expressValidator())
 
 // cookies use

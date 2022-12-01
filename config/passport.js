@@ -4,8 +4,11 @@ const mongoose = require('mongoose');
 const User = mongoose.model('usermaster');
 
 
-if(process.env.NODE_ENV !== 'production')
+if(process.env.NODE_ENV === 'production')
 {
+ dotenv.config();
+}
+else{
   dotenv.config();
 }
 // google login win passport

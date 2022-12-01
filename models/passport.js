@@ -4,6 +4,8 @@ const User = require('usermaster');
 
 dotenv.config();
 
+
+
 module.exports = function(passport){ 
     passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_ID,
@@ -24,3 +26,4 @@ module.exports = function(passport){
         });
       });
 }
+
