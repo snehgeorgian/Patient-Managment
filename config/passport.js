@@ -3,7 +3,11 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const User = mongoose.model('usermaster');
 
-dotenv.config();
+
+if(process.env.NODE_ENV !== 'production')
+{
+  dotenv.config();
+}
 // google login win passport
 module.exports = function (passport) {
   passport.use(
