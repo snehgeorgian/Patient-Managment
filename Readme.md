@@ -47,10 +47,6 @@ iv) login page :
 --> login page implement Authenication for Patientmanagement without authorize user read only patient page that displays data are public about patient information .
 
 
-important request:
-
-Respected professor,
-My assignment/project works properly on local host:3000 ,each and every function works properly but you know i have half deployed problem my application. We already had a meeting about deploying my assignment so please check my assignment at localhost:3000 and you can check github report repository as well. so please.
 
 
 
