@@ -15,6 +15,7 @@ module.exports = function (passport) {
         clientID: process.env.GOOGLE_ID,
         clientSecret: process.env.GOOGLE_SECRET,
         callbackURL: 'https://sneh-patientmanagement.onrender.com/auth/google/callback',
+       //callbackURL: 'http://localhost:3000/auth/google/callback'
       },
       async (accessToken, refreshToken, profile, done) => {
        // console.log("profile",profile);
